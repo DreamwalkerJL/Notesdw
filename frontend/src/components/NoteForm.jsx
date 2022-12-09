@@ -10,7 +10,7 @@ export default function NoteForm() {
   const [text, setText] = useState("");
   const [title, setTitle] = useState("");
 
-  const { notes, isLoading, isError, message, editNote } = useSelector(
+  const { editNote } = useSelector(
     (state) => state.notes
   );
 

@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import NoteForm from '../components/NoteForm'
 import NoteItem from '../components/NoteItem'
 import Spinner from '../components/Spinner'
-import { getNotes, reset } from '../features/notes/noteSlice'
+import { getNotes} from '../features/notes/noteSlice'
 
 function Dashboard() {
   const navigate = useNavigate()

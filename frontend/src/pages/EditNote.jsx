@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import NoteForm from "../components/NoteForm";
 import Spinner from "../components/Spinner";
@@ -9,7 +9,7 @@ function Dashboard() {
   const dispatch = useDispatch();
 
   const { user } = useSelector((state) => state.auth);
-  const { notes, isLoading, isError, message, editNote } = useSelector(
+  const { isLoading, isError, message, editNote } = useSelector(
     (state) => state.notes
   );
 
@@ -30,7 +30,6 @@ function Dashboard() {
   if (isLoading) {
     return <Spinner />;
   }
-  console.log(editNote);
 
   return (
     <>

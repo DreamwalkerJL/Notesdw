@@ -2,7 +2,7 @@ import { FaSignInAlt, FaSignOutAlt, FaUser } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { logout, reset } from "../features/auth/authSlice";
-import { createNote, reset as noteReset, updatedNote } from "../features/notes/noteSlice";
+import { reset as noteReset, } from "../features/notes/noteSlice";
 export default function Header() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
