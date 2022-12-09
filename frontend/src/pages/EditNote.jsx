@@ -25,7 +25,7 @@ function Dashboard() {
     if (!editNote) {
       return navigate("/");
     }
-  }, [user, navigate, isError, message, dispatch]);
+  }, [user, navigate, isError, message, dispatch, editNote]);
 
   if (isLoading) {
     return <Spinner />;
