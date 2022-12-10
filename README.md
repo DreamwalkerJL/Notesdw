@@ -1,6 +1,6 @@
 # DEMO
 
-https://mernappjl.herokuapp.com/
+https://notesdw.up.railway.app/
 
 # Notes App
 
